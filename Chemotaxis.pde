@@ -10,6 +10,7 @@ Bacteria [] colony;
  }   
  void draw()   
  {    
+   background(0,0,0);
    for(int i =0; i<colony.length; i++){
    colony[i].move();
   colony[i].show();
@@ -30,8 +31,9 @@ Bacteria [] colony;
       yBac = yBac + (int)(Math.random()*10-5);
     }
    void show(){
+    fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
     // background(200,200,200);
-     ellipse(xBac,yBac,30,30);
+     ellipse(xBac,yBac,10,10);
    }
    //lots of java!   
  }    

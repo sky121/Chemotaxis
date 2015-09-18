@@ -1,4 +1,6 @@
 Bacteria [] colony;
+
+
 int foodX = 50;
 int foodY = 50;
  void setup()   
@@ -30,8 +32,10 @@ int foodY = 50;
  
  class Bacteria    
  {  
+   int randColor =   color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
    int changeX = 2;
   int changeY = 2;
+  int randSize = (int)(Math.random()*10+1);
 
    int xBac, yBac, colorBac;
     Bacteria(){
@@ -62,8 +66,10 @@ int foodY = 50;
         if(foodY<yBac){
          changeY= 3;
          }
-    fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-    // background(200,200,200);
+         fill(0,0,0);
+          stroke(randColor);
+      // background(200,200,200);
+      
      ellipse(xBac,yBac,10,10);
    }
    //lots of java!   

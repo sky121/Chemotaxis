@@ -16,7 +16,7 @@ int foodY = 50;
    
    fill(0,0,0,10);
    rect(0,0,500,500);
-   fill(150,0,0);
+   fill(0,255,0);
    rect(foodX, foodY, 10, 10);
    for(int i =0; i<colony.length; i++){
    colony[i].move();
